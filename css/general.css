@@ -1,0 +1,32 @@
+*,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: linear-gradient(
+      210deg,
+      rgba(35, 94, 221, 0.3),
+      rgba(37, 224, 137, 0.3)
+    ),
+    url("../images/background.png") no-repeat center center / cover;
+  height: 100vh;
+}
+
+/* MAIN CONTENT */
+.container {
+  /* background: url("../images/rainbow-splotch.png") repeat center center;
+  height: 60rem; */
+  width: 60rem;
+  margin: 1.5rem auto;
+  /* Flexbox */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
