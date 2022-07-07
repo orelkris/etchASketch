@@ -67,7 +67,7 @@ gridSizeManipulator.addEventListener("input", (e) => {
 
 shader.addEventListener("click", (e) => {
   e.target.classList.add("shader-on");
-  grid.style.cursor = `url(https://orelkris.github.io/etchASketch/images/shader.png), pointer`;
+  grid.style.cursor = `url(./images/shader.png), pointer`;
 });
 
 // user should not see any grid lines once the size adjustment has been made
@@ -88,7 +88,8 @@ allBlockColors.forEach((blockColor) => {
       e.target.style.backgroundColor = availableColors.WHITE;
     }
 
-    grid.style.cursor = `url(https://orelkris.github.io/etchASketch/images/${color}.png), pointer`;
+    grid.style.cursor = `url(./images/${color}.png), pointer`;
+    console.log(grid.style.cursor);
   });
 });
 
