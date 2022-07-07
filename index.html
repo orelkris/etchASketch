@@ -5,13 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch a Sketch</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/all.css" />
     <script src="js/script.js" defer></script>
   </head>
   <body>
     <main>
       <div class="container">
-        <button class="btn-user-input">Choose Grid Size</button>
+        <div class="color-container">
+          <div class="color-palette">
+            <button class="red"></button>
+            <button class="green"></button>
+            <button class="blue"></button>
+
+            <button class="cyan"></button>
+            <button class="magenta"></button>
+            <button class="yellow"></button>
+
+            <button class="black"></button>
+            <button class="grey"></button>
+            <button class="brown"></button>
+
+            <button class="rainbow"></button>
+            <button class="shader">Shader</button>
+            <button class="eraser">Eraser</button>
+          </div>
+        </div>
+        <input type="range" min="16" max="100" value="16" />
         <div class="grid"></div>
       </div>
     </main>
