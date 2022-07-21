@@ -72,7 +72,6 @@ shader.addEventListener("click", (e) => {
 
 // user should not see any grid lines once the size adjustment has been made
 gridSizeManipulator.addEventListener("mouseup", (e) => {
-  console.log("MOUSEUP");
   const showGridLines = grid.querySelectorAll(".grid-item");
   showGridLines.forEach((square) => square.classList.remove("show-grid-lines"));
 });
@@ -88,7 +87,7 @@ allBlockColors.forEach((blockColor) => {
       e.target.style.backgroundColor = availableColors.WHITE;
     }
 
-    grid.style.cursor = `url(./images/${color}.png), pointer`;
+    grid.style.cursor = `url(./images/${color}.png) 13 13, pointer`;
     console.log(grid.style.cursor);
   });
 });
@@ -142,8 +141,6 @@ function addColor(e) {
       default:
         blockColors(e, color);
     }
-
-    console.log("from add color", color);
   }
 }
 
@@ -155,8 +152,6 @@ function shadeDarker(e, item) {
   let blue = Math.floor(colorNum[2] / 1.06);
 
   item.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
-  console.log(e.target.style.backgroundColor);
-  // item.style.backgroundColor = "#000";
 }
 
 function randomColor(e) {
@@ -178,7 +173,7 @@ function convertToRGB(color) {
       rgb = "rgb(255, 0, 0)";
       break;
     case availableColors.BLUE:
-      rgb = "rgb(, 0, 255)";
+      rgb = "rgb(0, 0, 255)";
       break;
     case availableColors.GREEN:
       rgb = "rgb(0, 255, 0)";
